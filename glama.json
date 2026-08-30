@@ -1,0 +1,9 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "name": "EQIQs",
+  "description": "Bring your 21-framework personality and compatibility data into your AI assistant. Look up profiles and score compatibility dynamically.",
+  "homepage": "https://www.eqiqs.com/mcp",
+  "endpoint": "https://adgmsnwjynqkhawhioil.supabase.co/functions/v1/mcp-server",
+  "maintainers": ["eqiqs"],
+  "license": "MIT"
+}
