@@ -1,0 +1,40 @@
+{
+  "name": "@eqiqs/mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server launcher for EQIQs — bridges Enneagram, MBTI, Big Five and 18 more frameworks into Claude, ChatGPT and other MCP clients.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "eqiqs-mcp-server": "./bin/eqiqs-mcp-server.mjs"
+  },
+  "main": "./bin/eqiqs-mcp-server.mjs",
+  "files": [
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "personality",
+    "mbti",
+    "enneagram",
+    "big-five",
+    "eqiqs"
+  ],
+  "homepage": "https://eqiqs.com/integrations/ai-coaching",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eqiqs/mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://eqiqs.com/contact"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
