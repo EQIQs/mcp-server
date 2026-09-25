@@ -8,7 +8,7 @@ frameworks into Claude, ChatGPT and any other Model Context Protocol client.
 Clients with remote MCP support connect directly:
 
 ```
-https://adgmsnwjynqkhawhioil.supabase.co/functions/v1/mcp
+https://adgmsnwjynqkhawhioil.supabase.co/functions/v1/mcp-server
 ```
 
 Sign-in uses OAuth 2.1 — every tool call is scoped to your own EQIQs data.
