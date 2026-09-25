@@ -16,7 +16,7 @@
  *   EQIQS_MCP_TOKEN  bearer token for clients that cannot do OAuth
  */
 
-const DEFAULT_URL = "https://adgmsnwjynqkhawhioil.supabase.co/functions/v1/mcp";
+const DEFAULT_URL = "https://adgmsnwjynqkhawhioil.supabase.co/functions/v1/mcp-server";
 const ENDPOINT = process.env.EQIQS_MCP_URL || DEFAULT_URL;
 const TOKEN = process.env.EQIQS_MCP_TOKEN || "";
 
