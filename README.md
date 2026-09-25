@@ -1,6 +1,6 @@
 # @eqiqs/mcp-server
 
-MCP server launcher for [EQIQs](https://eqiqs.com) — bring Enneagram, MBTI, Big Five and 18 more
+MCP server launcher for [EQIQs](https://eqiqs.com) â€” bring Enneagram, MBTI, Big Five and 18 more
 frameworks into Claude, ChatGPT and any other Model Context Protocol client.
 
 ## Remote (recommended)
@@ -11,7 +11,7 @@ Clients with remote MCP support connect directly:
 https://adgmsnwjynqkhawhioil.supabase.co/functions/v1/mcp-server
 ```
 
-Sign-in uses OAuth 2.1 — every tool call is scoped to your own EQIQs data.
+Sign-in uses OAuth 2.1 â€” every tool call is scoped to your own EQIQs data.
 
 ## Stdio bridge
 
@@ -37,27 +37,19 @@ For clients that only speak stdio:
 
 ## Tools
 
-**Your profile**
-- `get_my_profile` — your own 21-framework profile
-- `start_assessment` / `submit_assessment` — take the assessment inside the chat
+- `get_my_profile` â€” your own 21-framework profile
+- `list_profiles` / `get_profile` â€” people in your workspace
+- `create_profile` â€” add someone new
+- `add_note` / `list_notes` â€” save and read check-ins on a person
+- `invite_person` / `list_invites` â€” invite someone to take the assessment and track whether they finished
+- `start_assessment` / `submit_assessment` â€” take a framework in chat, one question at a time, and save the result
+- `prep_meeting` â€” how to work with each attendee and which pairings need care
+- `suggest_lead` â€” rank people for leading a piece of work
+- `list_relationships` â€” saved pairings
+- `score_compatibility` â€” compare two people in a business, romantic, friendship or co-parenting context
+- `score_team` â€” score a whole group (2-12 people, or a department) and roll every pairing up into one team read
+- `generate_narrative` â€” plain-language coaching narrative for a person or a pair (premium, metered)
 
-**People**
-- `list_profiles` / `get_profile` — people in your workspace
-- `create_profile` — add someone new
-- `invite_person` / `list_invites` — send a private assessment link and check its status
-
-**Pairs and teams**
-- `list_relationships` — saved pairings
-- `score_compatibility` — compare two people (business, romantic, friendship or co-parenting)
-- `score_team` — whole-team read for 2–12 people or a department
-- `team_playbook` — how a team works best together
-- `prep_meeting` — meeting prep for the people attending
-- `suggest_lead` — who is best placed to lead a project
-
-**Notes**
-- `add_note` / `list_notes` — private notes on people in your workspace
-
-Personal details (love language, attachment style, date of birth) are withheld in business contexts.
 
 Output is decision-support only and must never be the sole basis for hiring, promotion or
 termination decisions.
@@ -65,3 +57,4 @@ termination decisions.
 ## License
 
 MIT
+
