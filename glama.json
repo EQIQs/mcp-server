@@ -1,7 +1,7 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/server.json",
   "name": "EQIQs",
-  "description": "Bring your 21-framework personality and compatibility data into your AI assistant. Look up profiles and score compatibility dynamically.",
+  "description": "EQIQs™ is a 21-framework personality and compatibility assessment for coaching, communication and team development. Connect consented EQIQs workspace data to an MCP-compatible AI client for coaching, communication preparation, onboarding, and team-development conversations. Decision support only; not for employment selection, promotion, compensation, performance evaluation, or other high-stakes decisions.",
   "homepage": "https://www.eqiqs.com/mcp",
   "endpoint": "https://adgmsnwjynqkhawhioil.supabase.co/functions/v1/mcp-server",
   "maintainers": ["eqiqs"],

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * EQIQs MCP server launcher.
+ * EQIQs™ is a 21-framework personality and compatibility assessment for coaching, communication and team development.
  *
  * The EQIQs MCP server is hosted (Streamable HTTP + OAuth 2.1). This bin
  * script is a thin stdio <-> HTTP bridge for MCP clients that only speak
@@ -27,6 +27,10 @@ if (args.includes("--help") || args.includes("-h")) {
     [
       "@eqiqs/mcp-server — EQIQs Model Context Protocol server",
       "",
+      "EQIQs™ is a 21-framework personality and compatibility assessment for coaching, communication and team development.",
+      "Use for consent-based coaching, communication, onboarding, and team-development conversations.",
+      "Do not use for employment selection, promotion, compensation, performance evaluation, role assignment, or other high-stakes decisions.",
+      "",
       "Usage:",
       "  eqiqs-mcp-server            Start the stdio <-> HTTP bridge",
       "  eqiqs-mcp-server --url      Print the remote MCP endpoint",
@@ -36,7 +40,9 @@ if (args.includes("--help") || args.includes("-h")) {
       "  EQIQS_MCP_URL    Override the MCP endpoint",
       "  EQIQS_MCP_TOKEN  Bearer token (for clients without OAuth support)",
       "",
-      "Docs: https://eqiqs.com/integrations/ai-coaching",
+      "Docs: https://www.eqiqs.com/mcp",
+      "Methodology: https://www.eqiqs.com/methodology",
+      "Responsible use: https://www.eqiqs.com/responsible-use",
       "",
     ].join("\n"),
   );

@@ -34,8 +34,8 @@ jobs:
           {
             "\$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
             "name": "io.github.EQIQs/rapport-axis-core",
-            "title": "EQIQs Rapport Axis",
-            "description": "EQIQs Workplace Dynamics & Psychometric Compatibility Scoring",
+            "title": "EQIQs",
+            "description": "EQIQs™ is a 21-framework personality and compatibility assessment for coaching, communication and team development. Decision support only; not for employment selection, promotion, compensation, performance evaluation, role assignment, or other high-stakes decisions.",
             "version": "$VERSION",
             "remotes": [
               {
