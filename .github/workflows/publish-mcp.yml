@@ -4,6 +4,12 @@ on:
   push:
     tags:
       - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Registry version to publish, for example 1.0.17"
+        required: true
+        type: string
 
 jobs:
   publish:
@@ -27,15 +33,22 @@ jobs:
         run: ./mcp-publisher login github-oidc
 
       - name: Create Temporary server.json
+        env:
+          PUBLISH_VERSION: ${{ github.event.inputs.version || github.ref_name }}
         run: |
-          VERSION="${GITHUB_REF_NAME#v}"
+          VERSION="${PUBLISH_VERSION#v}"
+
+          if ! [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+([-.][0-9A-Za-z.-]+)?$ ]]; then
+            echo "Invalid version: $VERSION" >&2
+            exit 1
+          fi
 
           cat > server.json <<EOF
           {
             "\$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
             "name": "io.github.EQIQs/rapport-axis-core",
             "title": "EQIQs",
-            "description": "EQIQs™ is a 21-framework personality and compatibility assessment for coaching, communication and team development. Decision support only; not for employment selection, promotion, compensation, performance evaluation, role assignment, or other high-stakes decisions.",
+            "description": "EQIQs: 21-framework personality and compatibility for coaching, communication, and team development.",
             "version": "$VERSION",
             "remotes": [
               {
