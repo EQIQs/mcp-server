@@ -1,6 +1,6 @@
 {
   "name": "@eqiqs/mcp-server",
-  "version": "0.1.1",
+  "version": "1.0.17",
   "description": "EQIQs™ is a 21-framework personality and compatibility assessment for coaching, communication and team development. MCP launcher for consent-based workspace insights.",
   "license": "MIT",
   "type": "module",

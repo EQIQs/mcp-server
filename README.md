@@ -6,11 +6,7 @@
 
 ## Connect to the hosted server
 
-Clients with remote MCP support can connect to:
-
-```text
-https://adgmsnwjynqkhawhioil.supabase.co/functions/v1/mcp-server
-```
+Get the connection address at https://www.eqiqs.com/mcp
 
 Sign in with OAuth 2.1. Each tool call is scoped to the authenticated user's EQIQs data. Never share an access token or use another person's data without permission.
 
@@ -55,7 +51,7 @@ Compatibility outputs should be read with the returned data coverage. They are d
 
 Use EQIQs only for consent-based coaching, communication, self-reflection, onboarding after employment begins, and team development. Do **not** use it for employment screening, selection, termination, promotion, compensation, discipline, performance ratings, role assignment, or any other high-stakes decision.
 
-EQIQs's MBTI-style and DISC-style results are proprietary approximations, not licensed MBTI® or DISC® administrations. The public methodology explains framework provenance, evidence status, and limitations.
+EQIQs' MBTI-style and DISC-style results are proprietary approximations, not licensed MBTI® or DISC® administrations. The public methodology explains framework provenance, evidence status, and limitations.
 
 ## References
 
@@ -64,7 +60,7 @@ EQIQs's MBTI-style and DISC-style results are proprietary approximations, not li
 - [API documentation](https://www.eqiqs.com/api-docs) and [API quickstart](https://www.eqiqs.com/api-quickstart)
 - [Unified Engine](https://www.eqiqs.com/unified-engine) and [technology overview](https://www.eqiqs.com/technology)
 - [Examples and sample outputs](https://www.eqiqs.com/examples)
-- [Methodology, validity, and framework licensing](https://www.eqiqs.com/methodology)
+- [Methodology](https://www.eqiqs.com/methodology)
 - [Responsible Use Policy](https://www.eqiqs.com/responsible-use)
 - [Trust Center](https://www.eqiqs.com/trust), [privacy](https://www.eqiqs.com/privacy), and [system status](https://www.eqiqs.com/status)
 - [Product changelog](https://www.eqiqs.com/changelog) and [API changelog](https://www.eqiqs.com/api-changelog)
